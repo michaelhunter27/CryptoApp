@@ -1,3 +1,7 @@
+# Michael Hunter
+# CryptoApp
+# helpwindow.py
+
 import tkinter as tk
 from tkinter import ttk
 
@@ -47,7 +51,11 @@ class HelpWindow:
                                      "Other Features:\n"
                                      "Clicking the \"Clear\" button will clear all text in the upper \n"
                                      "textbox, the key, and the bottom ciphertext box.  This action \n"
-                                     "cannon be undone.")
+                                     "cannon be undone.\n\n"
+                                     "Clicking the \"Generate Text\" button will insert a random \n"
+                                     "example sentence into the upper text box and a random word into \n"
+                                     "the \"key\" entry field.  Click \"Encrypt\" to see the result \n"
+                                     "of encrypting the example message.")
         self.vert_line.configure(orient="vertical")
         self.dec_header.configure(anchor="w", justify="left", font=("Helvetica", 14),
                                   text="Decryption")
@@ -64,7 +72,8 @@ class HelpWindow:
                                      "Other Features:\n"
                                      "Clicking the \"Clear\" button will clear all text in the upper \n"
                                      "textbox, the key, and the bottom plaintext box.  This action \n"
-                                     "cannon be undone.")
+                                     "cannon be undone."
+                                     "\n\n\n\n\n")
         return
 
     def pack_widgets(self):
